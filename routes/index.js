@@ -4,7 +4,7 @@ var os = require("os");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Andy' });
 });
 
 router.get('/routes', function(req, res, next) {
