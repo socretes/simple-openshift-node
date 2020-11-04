@@ -4,12 +4,12 @@ var os = require("os");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Andy' });
+  var pjson = require('../package.json');
+  res.render('index', { title: 'Andy', version: pjson.version });
 });
 
 router.get('/routes', function(req, res, next) {
-  var pjson = require('../package.json');
-  res.send(pjson.version);
+  res.send(os.hostname());
 });
 
 module.exports = router;
