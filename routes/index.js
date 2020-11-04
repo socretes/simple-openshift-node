@@ -8,7 +8,9 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/routes', function(req, res, next) {
-  res.send(os.hostname());
+  var pjson = require('../package.json');
+  res.send(pjson.version);
 });
 
 module.exports = router;
+
