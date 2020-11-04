@@ -4,9 +4,8 @@ var path = require('path');	app = express();
 var cookieParser = require('cookie-parser');	
 var logger = require('morgan');	
 
-
-var indexRouter = require('./routes/index');	app.get('/', function (req, res) {
-var usersRouter = require('./routes/users');	  res.send('Hello World!\n');
+var indexRouter = require('./routes/index');	
+var usersRouter = require('./routes/users');	  
 
 var app = express();	
 
@@ -37,7 +36,7 @@ app.use(function(err, req, res, next) {
   // render the error page	
   res.status(err.status || 500);	
   res.render('error');	
-});	});
+});	
 
 
 module.exports = app;
