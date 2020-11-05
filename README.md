@@ -36,3 +36,27 @@ Create new apache http server from catalog
 Navigate to pod and run command. Monitor pods
 
 ab -dSrk -c 20 -n 5000000 http://simple-open-shift-node:8080
+
+Config. Pods mount the config map
+
+Database connection to postgresql
+
+NGINX
+
+Look at canary/blue-green/ab deployment and rollback
+
+Look at how we use pipelines in openshift
+
+Look at .NET
+
+Run with app that has own continer config. Consider node, .NET and 
+
+Look into app mgt - monitoring, logging, quotas, cost
+
+Review 12 factor app and ensure it meets
+
+Move back to local dev deployment of openshift
+
+Understand how local and cloud vrsion would operate side by side
+
+Look at how we would operate across cloud as well
